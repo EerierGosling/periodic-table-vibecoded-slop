@@ -23,10 +23,38 @@ header {
   margin-bottom: 20px;
 }
 
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.gh-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--dim);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  transition: color .15s, border-color .15s, background .15s;
+  white-space: nowrap;
+}
+
+.gh-link:hover {
+  color: var(--text);
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.07);
+}
+
 header h1 {
   font-size: 22px;
   font-weight: 700;
-  margin: 0 0 14px;
+  margin: 0;
   letter-spacing: -0.4px;
   background: linear-gradient(90deg, #e2eaf4 30%, #7eb8d4);
   -webkit-background-clip: text;
